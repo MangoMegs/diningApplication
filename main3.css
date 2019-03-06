@@ -1,0 +1,50 @@
+body {
+    background-color: rgba(124, 124, 124, 0.6);
+}
+
+.popup {
+    width: 325px;
+    height: 300px;
+    display: inline-block;
+    margin-top: 175px;
+    background-color: white;
+    border-radius: 30%;
+    box-shadow: 5px 10px 80px #606060;
+}
+
+header {
+    font-family: proxima-nova, sans-serif;
+    font-style: normal;
+    font-weight: 100;
+    font-size: 20px;
+    color: #7cadb9;
+    padding-top: 45px;
+}
+
+
+
+p {
+    font-family: proxima-nova, sans-serif;
+    font-style: normal;
+    font-weight: 100;
+    font-size: 14px;
+    padding-top: 15px;
+}
+
+.ok {
+    background-color: white;
+    border: 3px solid #7CADB9;
+    margin: 0px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-family: proxima-nova, sans-serif;
+    font-style: normal;
+    font-weight: 100;
+    font-size: 12px;
+    border-radius: 100px;
+}
