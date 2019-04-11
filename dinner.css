@@ -1,0 +1,55 @@
+body {
+
+    background-image: url(diningPhotos/homebackground.png);
+
+}
+
+h5 {
+    font-family: proxima-nova, sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+    font-style: italic;
+    color: white;
+    letter-spacing: 1px;
+
+}
+
+input[type=text] {
+
+    width: 200px;
+    background-image: url('/diningPhotos/dinnersearch.png');
+    background-size: 40px;
+    background-repeat: no-repeat;
+    padding-top: 5px;
+    padding-bottom: 30px;
+    margin: px 0;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 4px solid white;
+    background-color: rgba(255, 255, 255, 0.0);
+    background-position:  160px; 
+    font-family: proxima-nova, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    letter-spacing: 1px;
+    
+}
+
+
+.search {
+    background-color: rgba(255, 255, 255, 0.5);
+    margin-top: 200px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    text-align: center;
+    text-decoration: none;
+    font-family: proxima-nova, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    letter-spacing: 1px;
+    border-radius: 100px;
+}

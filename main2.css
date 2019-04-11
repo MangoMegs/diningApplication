@@ -1,7 +1,49 @@
  * {
      box-sizing: border-box;
  }
+body{
+height:800px;
+}
 
+#navbar {
+            display: grid;
+            align-content: center;
+            align-items: center;
+            padding-left: 40px;
+            padding-right: 30px;
+            grid-gap: 70px;
+            background-color: white;
+            right: 0px;
+            margin-left: 0;
+            padding-top: 10px;
+            box-shadow: 0px -10px 40px #eaeaeaea;
+            bottom: 0;
+            position: fixed;
+        }
+        
+        .searchNAV{
+grid-column: 1/4;
+grid-row:1;
+
+}
+
+.reservationNAV{
+grid-column: 2/4;
+grid-row:1;
+padding-left:10px;
+}
+
+.messagesNAV{
+grid-column: 3/4;
+grid-row:1;
+padding-left:30px;
+right:-10px;
+}
+
+.accountNAV{
+grid-column: 4/4;
+grid-row:1;
+}
  /* Slideshow container */
  .slideshow-container {
      max-width: 1000px;

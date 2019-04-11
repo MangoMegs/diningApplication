@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="leaflet.css" />
+
+    <title></title>
+    <style>
+        #mapid {
+            height: 250px;
+            width: 100%;
+            margin: 0;
+            top: 0;
+            left: 0;
+
+        }
+        body{
+        height:680px;
+        }
+
+        #navbar {
+            display: grid;
+            align-content: center;
+            align-items: center;
+            padding-left: 40px;
+            padding-right: 30px;
+            grid-gap: 70px;
+            background-color: white;
+            right: 0px;
+            margin-left: 0;
+            padding-top: 10px;
+            box-shadow: 0px -10px 40px #eaeaeaea;
+            bottom: 0;
+            position: fixed;
+        }
+
+        .searchNAV {
+            grid-column: 1/4;
+            grid-row: 1;
+
+        }
+
+        .reservationNAV {
+            grid-column: 2/4;
+            grid-row: 1;
+            padding-left: 10px;
+        }
+
+        .messagesNAV {
+            grid-column: 3/4;
+            grid-row: 1;
+            padding-left: 30px;
+            right: -10px;
+        }
+
+        .accountNAV {
+            grid-column: 4/4;
+            grid-row: 1;
+        }
+
+        #lanes {
+            display: grid;
+            width: 360px;
+            align-content: center;
+            align-items: center;
+            padding-left: 0px;
+            float: left;
+            grid-gap: 70px;
+            background-color: white;
+            right: 0px;
+            margin-left: 0;
+            box-shadow: 0px -10px 40px #eaeaeaea;
+            text-decoration: none;
+        }
+
+        .pic {
+            grid-column: 1/4;
+            grid-row: 1;
+            left: 0;
+
+        }
+
+        .name {
+            grid-column: 2/4;
+            grid-row: 1;
+            margin:0;
+            padding-right:90px; 
+         
+        }
+
+        .rating {
+            grid-column: 3/4;
+            grid-row: 1;
+            text-align: center;
+            display: inline-block;
+
+        
+        
+        }
+        
+        #homero {
+            display: grid;
+            width: 360px;
+            align-content: center;
+            align-items: center;
+            padding-left: 0px;
+            float: left;
+            grid-gap: 100px;
+            background-color: white;
+            margin-left: 0;
+            box-shadow: 0px -10px 40px #eaeaeaea;
+            margin-top: 30px;
+ 
+        }
+        
+        
+        #jamie {
+            display: grid;
+            width: 360px;
+            align-content: center;
+            align-items: center;
+            padding-left: 0px;
+            float: left;
+            grid-gap: 80px;
+            background-color: white;
+            right: 0px;
+            margin-left: 0;
+            box-shadow: 0px -10px 40px #eaeaeaea;
+            margin-top: 30px;
+        }
+
+        #naan {
+            display: grid;
+            width: 360px;
+            align-content: center;
+            align-items: center;
+            padding-left: 0px;
+            float: left;
+            grid-gap: 70px;
+            background-color: white;
+            right: 0px;
+            margin-left: 0;
+            box-shadow: 0px -10px 40px #eaeaeaea;
+            margin-top: 30px;
+        }
+        
+        #viola {
+            display: grid;
+            width: 360px;
+            align-content: center;
+            align-items: center;
+            padding-left: 0px;
+            float: left;
+            grid-gap: 100px;
+            background-color: white;
+            right: 0px;
+            margin-left: 0;
+            box-shadow: 0px -10px 40px #eaeaeaea;
+            margin-top: 30px;
+        }
+        
+        h5 {
+            margin-top: 0;
+            margin-bottom: 0;
+            padding-bottom: 0;
+            font-family: proxima-nova, sans-serif;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            margin-right:0;
+            
+
+        }
+
+        p {
+            margin: 0;
+            font-family: proxima-nova, sans-serif;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 10px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div id="mapid"></div>
+
+    <br>
+
+    <a href= /index.html>
+    <div id="lanes">
+
+        <div class="pic">
+            <img src="images/lanes.jpg" height="60px;">
+        </div>
+
+        <div class="name">
+            <h5>Lanes</h5>
+
+            <p>Mississauga | Chinese</p>
+        
+            <img src="images/vegan.png" height="12px;"> <img src="images/cost.png" height="12px;">
+            <img src="images/cost.png" height="12px;">
+          
+        </div>
+        
+        <div class="rating" style="margin-left: 15px;" >
+           <img src="images/stars.png" height="10px;">
+            <p style="font-size:15px;">0.8km</p>
+        </div>
+
+
+    </div>
+         </a>
+
+    
+    <div id="homero">
+
+        <div class="pic">
+            <img src="images/homero.jpg" height="60px;" width="90px;">
+        </div>
+
+        <div class="name">
+            <h5>Homero's Hot n' Spicy</h5>
+
+            <p>Mississauga | Caribbean</p>
+        
+            <img src="images/vegan.png" height="12px;"> <img src="images/cost.png" height="12px;">
+            <img src="images/cost.png" height="12px;">
+          
+        </div>
+
+        <div class="rating" style="margin-right: 10px;">
+           <img src="images/stars.png" height="10px;">
+            <p style="font-size:15px;">1km</p>
+        </div>
+
+    </div>
+    
+     <div id="jamie">
+
+        <div class="pic">
+            <img src="images/jamie.jpg" height="60px;">
+        </div>
+
+        <div class="name">
+            <h5>Jamie's Cookout</h5>
+
+            <p>Mississauga | Canadian</p>
+        
+            <img src="images/pawprint.png" height="10px;">
+            <img src="images/vegan.png" height="12px;"> <img src="images/cost.png" height="12px;">
+            <img src="images/cost.png" height="12px;">
+            
+          
+        </div>
+
+        <div class="rating">
+           <img src="images/stars.png" height="10px;">
+            <p style="font-size:15px;">1.3km</p>
+        </div>
+
+    </div>
+  
+     <div id="naan">
+
+        <div class="pic">
+            <img src="images/naan.jpg" height="60px;">
+        </div>
+
+        <div class="name">
+            <h5>Naan Palace</h5>
+
+            <p>Oakville | Indian</p>
+        
+            <img src="images/vegan.png" height="12px;"> <img src="images/cost.png" height="12px;">
+            <img src="images/cost.png" height="12px;">
+            <img src="images/cost.png" height="12px;">
+          
+        </div>
+
+        <div class="rating" style="margin-left: 20px; margin-right:0;">
+           <img src="images/stars.png" height="10px;">
+            <p style="font-size:15px;">3km</p>
+        </div>
+
+
+    </div>
+
+    <a href="/dinner.html">
+
+        <div id="navbar">
+
+            <div class="searchNAV">
+                <img src="images/searchNAVSELECT.png" height="35px;">
+            </div>
+
+            <div class="reservationNAV">
+                <img src="images/reservationNAV.png" height="40px;" width="30px;">
+            </div>
+
+            <div class="messagesNAV">
+                <img src="images/messagesNAV.png" height="25px;">
+            </div>
+
+            <div class="accountNAV">
+                <img src="images/accountNAV.png" height="40px;">
+            </div>
+        </div>
+    </a>
+
+
+
+    <script src="leaflet.js"></script>
+    <script>
+        var mymap = L.map('mapid').setView([43.4690, -79.6986], 13);
+        L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
+            attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+            maxZoom: 18,
+            id: 'mapbox.streets',
+            accessToken: 'pk.eyJ1IjoibWFuZ29tZWdzIiwiYSI6ImNqdTR1NWlrdjExbHI0NG55ZGs2c3Y0bHMifQ.MK9r2KlI3TJx48NKSAKxsg'
+        }).addTo(mymap);
+
+        var popup = L.popup()
+            .setLatLng([43.4690, -79.6986])
+            .setContent("Yummy Food Here!")
+            .openOn(mymap);
+    </script>
+
+</body>
+
+</html>
